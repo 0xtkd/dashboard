@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* left side admin panel */
+
+/* container */
+
+#dashboard {
+    width: 22vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #1992D4; 
+    padding: 25px;
+}
+
+/* general dashboad section */
+
+ul a {
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    height: 30px;
+    text-decoration: none;
+}
+
+ul a img {
+    color: #fff;
+}
+/* top dashboad section */
+
+.top a {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.top  a li {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.top a img {
+    height: 60px;
+    width: 60px;
+}
+
+/* middle dashboad section & bottom section */
+
+.middle a, .bottom a {
+    padding-left: 1rem;
+    margin-top: .5rem;
+}
+
+/* remove margin-top for first element of middle bottom of dashboard to respect the gap */
+
+.middle :first-child, .bottom :first-child{
+    margin-top: 0;
+}
+
+/* making dashboard font bold */
+
+a li {
+    font-weight: bold;
+}
