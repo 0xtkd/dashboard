@@ -8,6 +8,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    display: flex;
 }
 
 /* left side admin panel */
@@ -73,4 +74,79 @@ ul a img {
 
 a li {
     font-weight: bold;
+}
+
+/* navigation section */
+
+.navbar {
+    width: calc(100vw - 22vw);
+    height: 27vh;
+    border: 1px solid black;
+    padding-left: 2rem;
+    background-color: #fff;
+}
+
+.top-navbar label {
+    display: flex;
+    gap: 1rem;
+}
+
+.top-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+input[type=search] {
+    width: 35vw;
+    background-color: #1992D4;
+    background-color: silver;
+    border-radius: 15px;
+}
+
+/* top left section of navigation */
+
+.top-right {
+    gap: 1rem;
+}
+
+.top-left img, .top-right img {
+    height: 5vh;
+}
+
+/* top right section of navigation */
+
+.top-right {
+    width: 25vw;
+    height: 6vh;
+    display: flex;
+}
+
+/* bottom navigation section */
+
+.account {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+}
+
+/* .bottom-right {} */
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3rem 2rem 0;
+    height: 30px;
+}
+
+.buttons button {
+    font-size: 1rem;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #1992D4; 
 }
