@@ -2,5 +2,116 @@
   margin: 0;  
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid blue;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 25vw 1fr;
+    grid-template-rows: auto 80vh;
+}
+
+/* side bar section */
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    background-color: #1992D4;
+    color: #fff;
+    padding: 0 20px;
+    height: 100vh;
+}
+
+
+.sidebar a {
+  text-decoration: none;
+  color: #F9F9F9;
+}
+
+.sidebar li a {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 2.5rem;
+}
+
+.sidebar .top-sidebar .top a {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+
+.middle-sidebar, .bottom-sidebar {
+  margin-top: 3rem;
+}
+
+.top-sidebar {
+  margin-top: 1.3rem;
+}
+
+.top li a {
+  gap: 1.6rem;
+}
+
+.top li a h5 {
+  font-size: 2.3rem;
+  height: 80%; 
+  margin: 5px 0;
+  font-weight: bolder;
+}
+
+li a h5 {
+  height: 100%; 
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.middle li a, .bottom li a {
+  padding-left: 15px;
+}
+
+.middle-sidebar .middle li, .bottom-sidebar .bottom li {
+  margin-top: 0.8rem;
+}
+
+.middle li:nth-child(1) {
+  margin-top: 0;
+}
+
+.bottom li:nth-child(1) {
+  margin-top: 0;
+}
+
+.sidebar li {
+  list-style-type: none;
+}
+
+/* nav bar section */
+.navbar {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+    background-color: #448884;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar * {
+  border: 1px solid black;
+    /* display: none; */
+}
+
+/* 
+* navbar 
+* content 
+* */
+
+.main-content {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    background-color: #f2f290;
+    padding: 20px;
+    height: 80vh;
+}
+
+.main-content * {
+    display: none;
 }
